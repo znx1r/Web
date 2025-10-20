@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>zNx1r — Roblox Developer & Thumbnail Designer</title>
+  <meta name="description" content="Portfolio by zNx1r, Roblox Developer specialized in scripting, building and thumbnail design." />
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="nav container">
+      <div class="logo" onclick="scrollToId('hero')">
+        <span class="logo-dot"></span>
+        <span>zNx1r · Roblox Dev</span>
+      </div>
+      <div class="menu" id="menu">
+        <a href="#thumbnails">Thumbnails</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="right">
+        <button class="btn small" id="copyProfile">Copy Profile</button>
+        <button class="btn primary small" id="viewProfile">View Profile</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="hero container">
+      <h1>Hi, I'm <span class="highlight">zNx1r</span></h1>
+      <p class="sub">Roblox Developer experienced in <strong>scripting</strong>, <strong>building</strong>, <strong>3D modeling</strong>, and <strong>thumbnail design</strong>.</p>
+      <a class="btn primary" href="#thumbnails">See My Work</a>
+    </section>
+
+    <section id="thumbnails" class="container">
+      <h2 class="section-title">Thumbnails Showcase</h2>
+      <p class="lead">Here are some thumbnails I designed for Roblox experiences, combining lighting, composition, and in-game 3D rendering.</p>
+      <div id="thumbGrid" class="grid thumbs"></div>
+    </section>
+
+    <section id="skills" class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="grid service-grid">
+        <div class="card fade"><h3>Scripting</h3><p>Lua programming for mechanics, DataStores, UIs, and systems.</p></div>
+        <div class="card fade"><h3>Building</h3><p>Environment design with performance and player experience in mind.</p></div>
+        <div class="card fade"><h3>3D Modeling</h3><p>Custom assets made in Blender, optimized for Roblox Studio.</p></div>
+        <div class="card fade"><h3>Thumbnail Design</h3><p>High-impact renders that boost click-through rates and brand quality.</p></div>
+      </div>
+    </section>
+
+    <section id="about" class="container">
+      <h2 class="section-title">About Me</h2>
+      <p class="lead">I'm <strong>zNx1r</strong>, a Roblox developer passionate about combining creativity and technical skills. I enjoy crafting entire experiences — from the code and gameplay logic to the environment, 3D models, and final promotional thumbnails that bring everything together.</p>
+    </section>
+
+    <section id="contact" class="container">
+      <h2 class="section-title">Contact</h2>
+      <form id="contactForm" action="https://formspree.io/f/your-id" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button class="btn primary" type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> zNx1r — Roblox Developer</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
