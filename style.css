@@ -38,3 +38,32 @@ input, textarea { background:var(--card); border:1px solid #222; color:var(--fg)
 textarea { resize:vertical; min-height:100px; }
 
 footer { text-align:center; padding:40px 0; color:var(--muted); }
+
+
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 20px;
+}
+.social {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--card);
+  color: var(--fg);
+  padding: 12px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.social:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(14,165,255,0.3);
+}
+.social img {
+  width: 24px;
+  height: 24px;
+}
+
